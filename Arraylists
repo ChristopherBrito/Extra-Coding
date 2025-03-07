@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+public class Main
+{
+	public static void main(String[] args) {
+		ArrayList<String> obj = new ArrayList<String>();
+		obj.add("Catherine");
+		obj.add("Becky");
+		obj.add("Mary");
+		obj.add("Tim");
+		obj.set(1, "John");
+		obj.remove(3);
+		obj.clear();
+		obj.add(new String("Who"));
+		
+		//prints size of array
+		System.out.println(obj.size());
+		
+		//prints the array
+		System.out.println(obj);
+		
+	    //moves whatever is at index zero to the right and adds the new string in its place	
+		obj.add(0, new String("What"));
+		System.out.println(obj);
+		//moves whatever is at index zero to the right and adds the new string in its place	
+		obj.add(0, new String("Where"));
+		System.out.println(obj);
+		//moves whatever is at index one to the right and adds the new string in its place	
+		obj.add(1, new String("How"));
+		System.out.println(obj);
+	}
+}
